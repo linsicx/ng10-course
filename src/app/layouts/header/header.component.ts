@@ -52,6 +52,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   ) { }
 
   ngOnInit(): void {
+    console.log("1")
     this.contextServe.getUser().subscribe(user => {
       this.user = user;
       this.cdr.markForCheck();
